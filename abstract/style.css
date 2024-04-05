@@ -1,0 +1,235 @@
+/*      Header       */
+header{
+    width: 100%;
+    height: 370px;
+    min-height: fit-content;
+}
+
+section.panel{
+    width: 100%;
+    height: 45pt;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.panel div, .panel .menu > ul{
+    height: 56%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.panel div{
+    width: 250px;
+    min-width: fit-content;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+.panel div span{
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 8pt;
+    overflow: hidden;
+}
+.panel div span img{
+    position: relative;
+    left: 25%;
+    width: 75%;
+}
+.panel div hr{
+    width: 1px;
+    height: 100%;
+}
+.menu ul{
+    width: 400px;
+    min-width: fit-content;
+    font-size: 13.5pt;
+    font-weight: lighter;
+    list-style-type: none;
+}
+.menu ul li{
+    width: fit-content;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 17px 23px;
+    border-radius: 6px;
+}
+.menu ul li:nth-child(1){
+    background-color: #000;
+    border: .7px solid #fff;
+}
+.menu ul li:nth-child(2){
+    background-color: #4C5FD5;
+}
+
+header section.container{
+    width: 100%;
+    height: calc(100% - 45pt);
+    color: #000;
+    background-color: #dadbf1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .container > div{
+    text-align: center;
+    width: 100%;
+}
+header .container h1{
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+header .container form{
+    width: 45%;
+    height: 3em;
+    margin: 0 auto;
+}
+header .container form #search{
+    width: 100%;
+    height: 100%;
+    font-size: 13pt;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: .5px solid #000;
+    box-shadow: 2px 2px #c6c7db;
+    padding-right: 50px;
+}
+header .container form button{
+    width: 50px;
+    height: 100%;
+    position: relative;
+    top: -100%;
+    left: 46%;
+    background-color: transparent;
+    border: 0;
+    border-radius: 4px;
+    opacity: .8;
+    cursor: pointer;
+}
+header .container form button:hover{
+    background-color: #444;
+}
+header .container form button img{
+    width: 65%;
+    height: 100%;
+}
+
+/*  	Main     */
+main{
+    display: block;
+    width: 100%;
+    min-height: fit-content;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    padding: 0 5%;
+}
+main section.container{
+    width: 35%;
+    height: 25vh;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container > img{
+    width: 60px;
+    height: auto;
+}
+.container div{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.container div h2{
+    font-size: 16pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.container div p{
+    font-size: 17px;
+    font-weight: lighter;
+}
+.container div a{
+    display: block;
+    width: 110px;
+    height: fit-content;
+    padding: 5px 1px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4C5FD5;
+}
+.container div a img{
+    width: 15px;
+    height: 2px;
+}
+
+/*      Footer       */
+footer{
+    width: 100%;
+    height: 55vh;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 5%;
+}
+footer section.container{
+    width: 18%;
+    height: fit-content;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
+}
+footer section.container h3{
+    font-size: 14pt;
+}
+footer section.container ul{
+    list-style-type: none;
+}
+footer section.container ul li{
+    font-size: 14px;
+    padding-top: 4px;
+}
+footer section.container.-last{
+    position: relative;
+    top: 19vh;
+}
+footer section.container.-last span{
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 8pt;
+    overflow: hidden;
+}
+footer section.container.-last img{
+    position: relative;
+    left: 25%;
+    width: 75%;
+}
+footer section.container.-last h3{
+    font-size: 13pt;
+    font-weight: lighter;
+}
